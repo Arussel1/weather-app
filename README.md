@@ -1,0 +1,1 @@
+Weather app using HTML, CSS, JS and fetch weather API (https://www.weatherapi.com/)
