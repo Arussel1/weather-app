@@ -4,7 +4,7 @@ export default function processWeatherData(data){
         city: data.location.name,
         region: data.location.region,
         country: data.location.country,
-        localTIme: data.location.localTime,
+        localTime: forecast[0].date,
     }
     const currentInfo = {
         conditionText : data.current.condition.text,
@@ -29,5 +29,5 @@ export default function processWeatherData(data){
             rainChance: element.day.daily_chance_of_rain,
             icon: element.day.condition.icon, 
         }));
-    console.log( {location, currentInfo, moreInfo, forecastInfo});
+    return {location, currentInfo, moreInfo, forecastInfo};
      }

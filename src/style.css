@@ -11,3 +11,29 @@
 html {
     scroll-behavior: smooth;
 }
+form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -15%;
+    margin-left: -20%;
+    display:flex;
+    
+}
+input[name="city"]{
+    width:150%;
+    height: 30px;
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+button[type="submit"]{
+    border:0;
+    background-color: rgba(199, 186, 186, 0.699);
+    width:100px;
+    height: 30px;
+}
+
+button[type="submit"]:hover{
+    background-color: rgb(114, 111, 111);
+    cursor: pointer;
+}
