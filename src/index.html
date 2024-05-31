@@ -6,11 +6,15 @@
     <title>Weather App</title>
 </head>
 <body>
-    <form novalidate>
-        <input type="text" name="city" placeholder="Enter a city name: e.g London">
-        <button type="submit">Submit</button><br>
-        <span class="error" aria-live="polite"></span>
-
-    </form>
+    <div class="nav">
+        <p class="header">Weather247</p>
+        <form novalidate>
+            <input type="text" name="city" placeholder="Enter a city name: e.g London">
+            <button type="submit">Submit</button>
+        </form>
+  <span class="error" aria-live="polite"></span>
+  <button id="degree">°C</button>
+    </div>
+    <div class="content"></div>
 </body>
 </html>

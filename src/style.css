@@ -1,3 +1,22 @@
+/* Custom font */
+@font-face {
+    font-family: 'logo';
+    src: url('./fonts/Montserrat/static/Montserrat-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'title';
+    src: url('./fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'text';
+    src: url('./fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+}
+
+
 /* Reset CSS */
 *,
 *::before,
@@ -11,29 +30,113 @@
 html {
     scroll-behavior: smooth;
 }
-form{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -15%;
-    margin-left: -20%;
+div.nav{
     display:flex;
-    
+    align-items: center;
+    width:100%;
+    padding:1rem;
+    background-color: rgba(194, 199, 201, 0.418);
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 4rem;
 }
+
+.header{
+    font-size: 1.5rem;
+    font-family: 'logo';
+}
+
+form{
+    display: flex;
+    margin-left: auto;
+    margin-right: 4rem;
+}
+
 input[name="city"]{
     width:150%;
     height: 30px;
     font-size: 1rem;
+    font-family: 'text';
     margin-right: 1rem;
+    border-radius: 8px;
+    border:0;
+    padding: 0 0.5rem; 
 }
 button[type="submit"]{
     border:0;
     background-color: rgba(199, 186, 186, 0.699);
-    width:100px;
+    width: 150px;
     height: 30px;
+    border-radius: 8px;
+    font-family: 'text';
+}
+#degree{
+    border-radius: 8px;
+    border:0;
+    padding: 0 0.5rem; 
+    height: 30px;
+    width:60px;
+    font-size: 1rem;
+    font-family: 'text';
+    background-color: rgba(199, 186, 186, 0.699);
 }
 
-button[type="submit"]:hover{
+button[type="submit"]:hover, #degree:hover{
     background-color: rgb(114, 111, 111);
     cursor: pointer;
+}
+
+.infoContainer{
+    display:flex;
+    font-family: text;
+    color:white;
+    max-width: 75%;
+    margin: auto;
+    justify-content: space-around;
+    background-color: rgba(113, 118, 119, 0.582);
+    border-radius: 8px;
+    margin-bottom: 3rem;
+}
+
+.mainInfo{
+    padding:2rem;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.25rem;
+    margin-right: 0.5rem;
+}
+.mainInfo > *{
+    margin-bottom: 1rem;
+}
+
+.sideInfo{
+    padding:2rem;
+    font-size: 1.25rem;
+    text-align: left;
+    border-radius: 8px;
+}
+.sideInfo > *{
+    margin-bottom: 4rem;
+}
+
+.forecastContainer{
+    display:flex;
+    font-family: text;
+    color:white;
+    max-width: 75%;
+    margin: auto;
+    justify-content: space-around;
+    background-color: rgba(113, 118, 119, 0.582);
+    border-radius: 8px;
+}
+.forecastContainer > *{
+    padding:2rem;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.25rem;
+    margin-right: 0.5rem;
+}
+
+.forecastContainer > * > *{
+    margin-bottom: 1rem;
 }
